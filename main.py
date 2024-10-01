@@ -2,21 +2,27 @@ from typing import Final
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
-Token: Final = "7631757269:AAG7mNPHuyIHpD2JJEcXJqE89WKuNHum-yw"
-BOT_USERNAME: Final = "@CodeWithFrayo_bot"
+Token: Final = "6704443537:AAFobi4Flxmm7pto_tIADoM0tTsrFLD7Z64"
+BOT_USERNAME: Final = "@michealneo_bot"
 
 
 # Commands
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Hello,Thanks for chatting... I am Frayo!")
+    await update.message.reply_text("Hello,Thanks for chatting... I be your favorite bot and my work na giude my "
+                                    "fellow Nigerians grow in the tech world.")
 
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("I am here to help you overcome your coding challenges in python")
+    await update.message.reply_text(
+        """
+Python na very sweet programming language and most most Nigeria wey get interest no fit afford the course. 
+So i wan help myself and also help those wey wan learn as we grow together.
+        """
+    )
 
 
 async def goal_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("My goal is to create and build sharp minds in the world of tech.")
+    await update.message.reply_text("My goal na to create and build sharp minds wey go excel in the world of tech.")
 
 
 async def contact_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -24,7 +30,7 @@ async def contact_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         """
 Follow me at...
 Twitter: http://X.com/CODEWITHFRAYO
-Phone No: 07084952237
+Phone No: 070xxxxxx37
 Email: amosfridayogb@gmail.com
         """
     )
@@ -84,4 +90,4 @@ if __name__ == "__main__":
 
     # Polls the bot
     print("Polling...")
-    app.run_polling(poll_interval=3)
+    app.run_polling(poll_interval=1)
